@@ -18,5 +18,12 @@ var typed = new Typed("#typed-text", {
   loopCount: 5,
 });
 
+window.addEventListener('scroll', ()=>{
+  if(scrollY>100){
+    document.querySelector('header').classList.add('fixed')
+  }else{
+    document.querySelector("header").classList.remove("fixed");
+  }
+})
 
 
