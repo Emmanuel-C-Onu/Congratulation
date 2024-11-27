@@ -39,3 +39,23 @@ function scroll() {
   });
 }
 
+
+function showMsg() {
+  let x = document.querySelector(".showModal");
+  x.classList.add("translate-y-[0px]");
+}
+function hideMsg() {
+  let y = document.querySelector(".showModal");
+  y.classList.remove("translate-y-[0px]");
+}
+document.querySelector('.hideModal').addEventListener('click',()=>{
+   hideMsg();
+})
+setTimeout(() => {
+  showMsg();
+}, 5000);
+setTimeout(() => {
+  hideMsg();
+}, 20000);
+
+
