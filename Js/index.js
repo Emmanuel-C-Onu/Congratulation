@@ -10,13 +10,18 @@ const colors = [
   "blue",
   "red",
   "gray",
+  "crimson",
+  "darkcyan",
+  "steelblue",
+  "teal",
 ];
+
 
 
 window.addEventListener("DOMContentLoaded", doSomthing());
 
 function doSomthing() {
-  let startCount = 10;
+  let startCount = 13;
 
   const intervalID = setInterval(() => {
     const endCount = 0;
@@ -50,6 +55,7 @@ function doSomthing() {
 
 
 function clickme() {
+  doSomthing();
   let startCount = 20;
 
   const intervalID = setInterval(() => {
