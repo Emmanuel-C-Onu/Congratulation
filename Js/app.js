@@ -8,6 +8,16 @@ mobileMenu.addEventListener("click", () => {
   mobile.classList.toggle("hidden");
 });
 
+
+setInterval(() => {
+  if (!mobile.classList.contains('hidden')) {
+
+      mobile.classList.toggle("hidden", true);
+  
+  }
+}, 7000);
+
+
 // let autoTyping = new Typed("#typed-text", {
 //   strings: [
 //     "My Sweet Stella Owa Ogiemwonyi, ",
@@ -23,7 +33,7 @@ mobileMenu.addEventListener("click", () => {
 // });
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 100) {
+  if (scrollY > 30) {
     document.querySelector("header").classList.add("fixed");
   } else {
     document.querySelector("header").classList.remove("fixed");

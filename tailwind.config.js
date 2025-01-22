@@ -4,18 +4,24 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        wiggle: "heartbeat 0.7s ease infinite",
+        wiggle: "heartbeat 1s ease infinite",
       },
       keyframes: {
         heartbeat: {
           "0%": {
             transform: "scale(1)",
           },
-         "25%": {
+         "20%": {
+            transform: "scale(1.1)",
+          },
+         "40%": {
             transform: "scale(1.2)",
           },
-          "50%": {
-            transform: "scale(1.5)",
+         "60%": {
+            transform: "scale(1.2)",
+          },
+          "80%": {
+            transform: "scale(1.1)",
           },
           "100%": {
             transform: "scale(1)",

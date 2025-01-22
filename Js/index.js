@@ -27,11 +27,6 @@ function doSomthing() {
 
     document.body.style.backgroundColor = `${randomColor}`;
 
-
-
-
-    //accessButton.innerHTML = count;
-    
     if (countInterval == 0) {
       clearInterval(intervalID);
     }
