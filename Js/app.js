@@ -1,5 +1,28 @@
 let mobileMenu = document.querySelector('.mobileButton')
 let mobile = document.querySelector('.mobile')
+let access = document.querySelector('.access')
+let accessButton = document.querySelector('.accessButton')
+
+access.addEventListener('click', () =>{
+  let startCount = 20;
+
+  const intervalID = setInterval(() => {
+    const endCount = 0;
+    const countInterval = startCount - endCount;
+
+    const count = startCount--;
+    accessButton.innerHTML = count;
+
+    if (countInterval == 0) {
+      clearInterval(intervalID);
+      accessButton.innerHTML = "ok";
+      setTimeout(() => {
+        location.href = "main.html";
+      }, 1500);
+    }
+  }, 1500);
+
+})
 
 
 mobileMenu.addEventListener('click', ()=>{
